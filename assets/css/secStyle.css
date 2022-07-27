@@ -111,8 +111,17 @@ section {
   border-radius: 5px;
   border: 3px solid black;
   display: block;
-}
 
+}
+.inputs::after{
+  content: "mm";
+  display: block;
+  width: 25px;
+  position: absolute;
+  right: 6px;
+  bottom: 7px;
+  font-size: 13px;
+}
 .inputs label {
   width: auto;
   display: block;
@@ -123,17 +132,17 @@ section {
 .inputs input {
   font-size: 16px;
   text-align: center;
-  width: 75px;
   border-top: none;
   border-right: none;
   border-left: none;
   border-image: initial;
   border-bottom: 1px solid black;
   border-radius: 0px;
-  width: 70px;
+  width: 40px;
   margin: auto;
   display: block;
   padding: 0;
+  padding-right: 30px;
 }
 .inputs input::-webkit-outer-spin-button,
 .inputs input::-webkit-inner-spin-button {
