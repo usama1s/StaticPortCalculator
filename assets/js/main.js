@@ -79,7 +79,7 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#groupA span").style.color = "red";
     }
     if (groupA != "NaN") {
-      document.querySelector("#groupA span").innerHTML = groupA;
+      document.querySelector("#groupA span").innerHTML = groupA+" mm";
     }
 
 
@@ -89,7 +89,7 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#groupB span").style.color = "red";
     }
     if (groupB != "NaN") {
-      document.querySelector("#groupB span").innerHTML = groupB;
+      document.querySelector("#groupB span").innerHTML = groupB+" mm";
     }
 
     if (groupC >= -0.5 && groupC <= 0.5) {
@@ -98,7 +98,7 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#groupC span").style.color = "red";
     }
     if (groupC != "NaN") {
-      document.querySelector("#groupC span").innerHTML = groupC;
+      document.querySelector("#groupC span").innerHTML = groupC+" mm";
     }
 
     if (groupD >= -0.5 && groupD <= 0.5) {
@@ -107,7 +107,7 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#groupD span").style.color = "red";
     }
     if (groupD != "NaN") {
-      document.querySelector("#groupD span").innerHTML = groupD;
+      document.querySelector("#groupD span").innerHTML = groupD+" mm";
     }
 
   });

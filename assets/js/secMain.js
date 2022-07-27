@@ -61,7 +61,7 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#groupA span").style.color = "red";
     }
     if (groupA != "NaN") {
-      document.querySelector("#groupA span").innerHTML = groupA;
+      document.querySelector("#groupA span").innerHTML = groupA+" mm";
     }
 
 
@@ -71,7 +71,7 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#groupB span").style.color = "red";
     }
     if (groupB != "NaN") {
-      document.querySelector("#groupB span").innerHTML = groupB;
+      document.querySelector("#groupB span").innerHTML = groupB+" mm";
     }
 
 
