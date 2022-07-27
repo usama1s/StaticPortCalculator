@@ -205,7 +205,7 @@ section {
   background: red;
   position: absolute;
   z-index: 0;
-  height: 120px;
+  height: 130px;
   transform-origin: center center;
 }
 
@@ -224,7 +224,7 @@ section {
 
 #line1 {
   left: 12%;
-  top: 36.4%;
+  top: 35.0%;
   transform: translate(-50%, -50%) rotate(-39deg);
   background: rgb(77, 20, 140);
 }
@@ -234,10 +234,10 @@ section {
 }
 
 #line2 {
-  left: 24%;
-  top: 56.5%;
+  left: 22%;
+  top: 57.8%;
   transform: translate(-50%, -50%) rotate(-122deg);
-  height: 109px;
+  /* height: 109px; */
   background: rgb(114 25 213);
 }
 
@@ -249,7 +249,7 @@ section {
   left: 39.7%;
   top: 32.5%;
   transform: translate(-50%, -50%) rotate(-22deg);
-  height: 131px;
+  /* height: 131px; */
   background: rgb(108, 34, 115);
 }
 
@@ -259,9 +259,9 @@ section {
 
 #line4 {
   left: 60.4%;
-  bottom: 66.4%;
+  bottom: 67.5%;
   transform: translate(-50%, 50%) rotate(21deg);
-  height: 125px;
+  /* height: 125px; */
   background: rgb(229 98 47);
 }
 
@@ -281,9 +281,9 @@ section {
 }
 
 #line6 {
-  right: 13.5%;
-  bottom: 63%;
-  transform: translate(50%, 50%) rotate(35deg);
+  right: 10.5%;
+  bottom: 62.4%;
+  transform: translate(50%, 50%) rotate(45deg);
   background: rgb(216, 84, 31);
 }
 

@@ -145,6 +145,9 @@ section {
   display: block;
   padding: 0;
 }
+.inputs input.red{
+  color: red !important;
+}
 
 .inputs input::-webkit-outer-spin-button,
 .inputs input::-webkit-inner-spin-button {
@@ -237,7 +240,7 @@ section {
   background: red;
   position: absolute;
   z-index: 0;
-  height: 107px;
+  height: 120px;
   transform-origin: center center;
 }
 
@@ -255,8 +258,8 @@ section {
 }
 
 #line1 {
-  left: 13.9%;
-  top: 37%;
+  left: 12.7%;
+  top: 36%;
   transform: translate(-50%, -50%) rotate(-48deg);
   background: rgb(77, 20, 140);
 }
@@ -266,10 +269,10 @@ section {
 }
 
 #line2 {
-  left: 22.5%;
-  top: 56%;
+  left: 21.5%;
+  top: 57.2%;
   transform: translate(-50%, -50%) rotate(-126deg);
-  height: 109px;
+  /* height: 109px; */
   background: rgb(114 25 213);
 }
 
@@ -278,10 +281,10 @@ section {
 }
 
 #line3 {
-  left: 35.7%;
-  top: 32%;
+  left: 35.2%;
+  top: 31.4%;
   transform: translate(-50%, -50%) rotate(-21deg);
-  height: 111px;
+  /* height: 111px; */
   background: rgb(108, 34, 115);
 }
 
@@ -290,8 +293,8 @@ section {
 }
 
 #line4 {
-  left: 40%;
-  bottom: 41.5%;
+  left: 39.1%;
+  bottom: 38.7%;
   transform: translate(-50%, 50%) rotate(-147deg);
   background: rgb(142 40 255);
 }
@@ -302,7 +305,7 @@ section {
 
 #line5 {
   left: 52.5%;
-  bottom: 67.5%;
+  bottom: 69.7%;
   transform: translate(-50%, 50%) rotate(360deg);
   background: #632b89;
 }
@@ -313,7 +316,7 @@ section {
 
 #line6 {
   right: 38%;
-  bottom: 39%;
+  bottom: 36.5%;
   transform: translate(50%, 50%) rotate(167deg);
   background: rgb(216, 84, 31);
 }
@@ -324,7 +327,7 @@ section {
 
 #line7 {
   right: 32.5%;
-  top: 32%;
+  top: 30%;
   transform: translate(50%, -50%) rotate(5deg);
   background: rgb(246, 98, 7);
 }
@@ -334,8 +337,8 @@ section {
 }
 
 #line8 {
-  right: 19.2%;
-  top: 57.2%;
+  right: 17.2%;
+  top: 58.5%;
   transform: translate(50%, -50%) rotate(134deg);
   background: rgb(213 65 65);
 }
@@ -345,10 +348,10 @@ section {
 }
 
 #line9 {
-  right: 12.6%;
-  top: 36.2%;
+  right: 10.6%;
+  top: 32.2%;
   transform: translate(50%, -50%) rotate(31deg);
-  height: 90px;
+  /* height: 90px; */
   background: rgb(215 136 85);
 }
 

@@ -42,6 +42,14 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#inp6").style.color = "black";
     }
 
+    if (inp1 == inp6){
+      document.querySelector("#inp1").style.color = "black";
+      document.querySelector("#inp6").style.color = "black";
+    }else{
+      document.querySelector("#inp1").style.color = "red";
+      document.querySelector("#inp6").style.color = "red";
+    }
+
     groupA = (((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
     groupB = (((eval(inp1) + eval(inp6))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
 

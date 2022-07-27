@@ -59,11 +59,19 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#inp9").style.color = "black";
     }
 
+
+    if (inp1 == inp9){
+      document.querySelector("#inp1").style.color = "black";
+      document.querySelector("#inp9").style.color = "black";
+    }else{
+      document.querySelector("#inp1").style.color = "red";
+      document.querySelector("#inp9").style.color = "red";
+    }
     groupA = (((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
     groupB = (((eval(inp5) + eval(inp8))/2) - ((eval(inp6) + eval(inp7)) / 2)).toFixed(2);
     groupC = (((eval(inp1) + eval(inp7))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
     groupD = (((eval(inp3) + eval(inp9))/2) - ((eval(inp6) + eval(inp7)) / 2)).toFixed(2);
-   
+
 
     if (groupA >= -0.25 && groupA <= 0.25) {
       document.querySelector("#groupA span").style.color = "green";
@@ -124,7 +132,7 @@ function reset() {
   document.querySelector("#groupB span").innerHTML = "";
   document.querySelector("#groupC span").innerHTML = "";
   document.querySelector("#groupD span").innerHTML = "";
-  
+
 }
 window.addEventListener('resize', function(event) {
   updateEngineSize()
