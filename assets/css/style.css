@@ -68,7 +68,7 @@ h4 {
 section {
   width: fit-content;
   height: fit-content;
-  padding: 50px 300px 50px 212px !important;
+  padding: 50px 200px 50px 200px !important;
   margin: auto;
 }
 .switcher {
@@ -441,13 +441,13 @@ section {
   z-index: 3;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   section {
     position: relative;
-    /* transform: translateY(-5%); */
-    padding: 75px 166px 0px 120px !important;
+
+    padding: 75px 160px 0px 160px !important;
   }
-}
+} */
 @media (max-width: 892px) {
   .switcher a {
     font-size: 15px;
@@ -594,16 +594,24 @@ h2 , .output{
   }
 }
 
-
+@media (min-width: 1050px) {
+  section{
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+}
+@media (min-width: 1200px) {
+  section{
+    transform: scale(1.2);
+  }
+}
 @media (min-width: 1300px) {
   section{
     transform: scale(1.3);
-    transform-origin: center;
   }
 }
 @media (min-width: 1600px) {
   section{
     transform: scale(1.5);
-    transform-origin: center;
   }
 }
