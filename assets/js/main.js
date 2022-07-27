@@ -61,8 +61,8 @@ for (var i = 0; i < inputlength; i++) {
 
     groupA = (((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
     groupB = (((eval(inp5) + eval(inp8))/2) - ((eval(inp6) + eval(inp7)) / 2)).toFixed(2);
-    groupC = (((eval(inp1) + eval(inp7))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(1);
-    groupD = (((eval(inp3) + eval(inp9))/2) - ((eval(inp6) + eval(inp7)) / 2)).toFixed(1);
+    groupC = (((eval(inp1) + eval(inp7))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
+    groupD = (((eval(inp3) + eval(inp9))/2) - ((eval(inp6) + eval(inp7)) / 2)).toFixed(2);
    
 
     if (groupA >= -0.25 && groupA <= 0.25) {

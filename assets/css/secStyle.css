@@ -25,7 +25,13 @@ body {
   -webkit-flex-wrap: wrap;
   /* NEW */
 }
-
+main {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  display: flex;
+}
 h2 {
   position: absolute;
   right: -35%;
@@ -88,12 +94,13 @@ section {
 }
 
 .landscapeScreen #engine-img {
-height: calc(100vh - 300px);
+height: 339px;
   border-radius: 10px;
 }
 
 .portraitScreen #engine-img {
-  width: calc(100vw - 280px);
+  height: 339px;
+  border-radius: 10px;
 }
 
 .inputs {
@@ -445,9 +452,9 @@ right: 12.6%;
      .groups{
       font-size:16px ;   
      }
-     section{
-             padding: 50px 300px 50px 261px !important;
-     }
+     section {
+      padding-right: 235px !important;
+  }
      .output span {
   margin: 3px 0;
      }
@@ -476,7 +483,41 @@ right: 12.6%;
     /* top: -35px; */
   }
 }
-
+@media(max-width:798px){
+  .portraitScreen #engine-img {
+    height: 310px;
+  }
+  h4 {
+    left: -48%;
+    top: -28%;
+    font-size: 9px;
+    max-width: 110px;
+}
+h2 {
+  right: -28%;
+  top: 50%;
+  font-size: 11px;
+  line-height: 17px;
+  max-width: 115px;
+}
+.output {
+  width: 115px;
+  position: absolute;
+  right: -28%;
+  top: 24%;
+  padding: 4px;
+}
+.logo {
+  width: 85px;
+}
+.btns-logo {
+  width: 170px;
+  right: -19%;
+}
+section {
+  padding: 0 100px 0 64px !important;
+}
+}
 /* --- popup-- */
 .info-btn {
   cursor: pointer;
