@@ -46,7 +46,7 @@ h2 {
   border: 3px solid rgb(240, 95, 12);
   text-align: center;
 }
-  
+
 h4 {
   position: absolute;
   left: -60%;
@@ -64,7 +64,7 @@ h4 {
 section {
   width: fit-content;
   height: fit-content;
-  padding: 50px 300px 50px 212px !important;
+  padding: 50px 200px 50px 200px !important;
   margin: auto;
 }
 .switcher{
@@ -105,13 +105,14 @@ height: 339px;
 
 .inputs {
   background-color: white;
-  padding: 5px;
-  max-width: 78px;
+  padding: 5px 0;
+  width: 85px;
   position: absolute;
   z-index: 1;
   transform-origin: center center;
   border-radius: 5px;
   border: 3px solid black;
+  display: block;
 }
 
 .inputs label {
@@ -131,8 +132,11 @@ height: 339px;
   border-image: initial;
   border-bottom: 1px solid black;
   border-radius: 0px;
+  width: 70px;
+  margin: auto;
+  display: block;
+  padding: 0;
 }
-
 .inputs input::-webkit-outer-spin-button,
 .inputs input::-webkit-inner-spin-button {
   appearance: none;
@@ -417,26 +421,26 @@ right: 12.6%;
   section {
     position: relative;
     /* transform: translateY(-5%); */
-    padding: 75px 278px 0px 120px;
+    padding: 75px 120px 0px 120px;
   }
 }
- @media (max-width: 892px) {
+ /* @media (max-width: 892px) {
      .btns-logo{
          width: 191px;
-         
+
   right: -25% ;
      }
      .logo{
          width:100px;
      }
      h4{
-            
+
   left: -56% ;
   top: -28% ;
       font-size: 9px ;
      }
      h2 {
- 
+
   right: -31%  ;
   top: 50%  ;
 
@@ -450,7 +454,7 @@ right: 12.6%;
   top: 24%  ;
      }
      .groups{
-      font-size:16px ;   
+      font-size:16px ;
      }
      section {
       padding-right: 235px !important;
@@ -458,31 +462,8 @@ right: 12.6%;
      .output span {
   margin: 3px 0;
      }
- }
-@media (max-height: 720px) {
-  h2 {
-    /* top: 50px; */
-    /* right: -20%; */
-  }
+ } */
 
-  .output {
-    /* bottom: -20px; */
-    /* right: -20%; */
-  }
-
-  .info-btn {
-    /* top: 15px; */
-  }
-
-  .reset {
-    /* top: 15px; */
-  }
-
-  .btns-logo {
-    /* right: -20%; */
-    /* top: -35px; */
-  }
-}
 @media(max-width:798px){
   .portraitScreen #engine-img {
     height: 310px;

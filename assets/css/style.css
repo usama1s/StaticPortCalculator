@@ -35,6 +35,8 @@ main {
   height: 100vh;
   display: block;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h2 {
   position: absolute;
@@ -68,8 +70,9 @@ h4 {
 section {
   width: fit-content;
   height: fit-content;
-  padding: 50px 200px 50px 200px !important;
+  padding: 89px 270px 50px 228px !important;
   margin: auto;
+      transform-origin: center;
 }
 .switcher {
   position: absolute;
@@ -361,7 +364,7 @@ section {
   padding: 8px;
   position: absolute;
   right: -28%;
-  top: 50%;
+  top: 33%;
   transform: translate(70%, calc(-0% + 45px));
   background: white;
   border-radius: 5px;
@@ -448,7 +451,7 @@ section {
     padding: 75px 160px 0px 160px !important;
   }
 } */
-@media (max-width: 892px) {
+/* @media (max-width: 892px) {
   .switcher a {
     font-size: 15px;
   }
@@ -496,7 +499,7 @@ section {
   .output span {
     margin: 3px 0;
   }
-}
+} */
 @media (max-width: 745px) {
   .portraitScreen #engine-img {
     height: 300px;
@@ -594,10 +597,15 @@ h2 , .output{
   }
 }
 
+@media (max-width: 925px) {
+  section{
+    transform: scale(0.9);
+  }
+}
+
 @media (min-width: 1050px) {
   section{
     transform: scale(1.1);
-    transform-origin: center;
   }
 }
 @media (min-width: 1200px) {
