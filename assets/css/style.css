@@ -135,7 +135,7 @@ section {
   border-image: initial;
   border-bottom: 1px solid black;
   border-radius: 0px;
-  width: calc(100% - 16px);
+  width: 70px;
   margin: auto;
   display: block;
 }
