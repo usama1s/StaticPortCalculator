@@ -464,7 +464,7 @@ right: 12.6%;
      }
  } */
 
-@media(max-width:798px){
+/* @media(max-width:798px){
   .portraitScreen #engine-img {
     height: 310px;
   }
@@ -498,7 +498,7 @@ h2 {
 section {
   padding: 0 100px 0 64px !important;
 }
-}
+} */
 /* --- popup-- */
 .info-btn {
   cursor: pointer;
