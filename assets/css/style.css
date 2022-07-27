@@ -109,8 +109,8 @@ section {
 
 .inputs {
   background-color: white;
-  padding: 5px;
-  max-width: 78px;
+  padding: 5px 0;
+  width: 85px;
   position: absolute;
   z-index: 1;
   transform-origin: center center;
@@ -135,6 +135,9 @@ section {
   border-image: initial;
   border-bottom: 1px solid black;
   border-radius: 0px;
+  width: calc(100% - 16px);
+  margin: auto;
+  display: block;
 }
 
 .inputs input::-webkit-outer-spin-button,
@@ -235,8 +238,8 @@ section {
 .lines::after {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   background: red;
   position: absolute;
   bottom: 0px;
@@ -498,7 +501,7 @@ section {
     border-radius: 10px;
   }
   h4 {
-   
+
     max-width: 100px;
 }
 h2 , .output{
