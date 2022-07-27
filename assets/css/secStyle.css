@@ -45,12 +45,13 @@ h2 {
   border-radius: 5px;
   border: 3px solid rgb(240, 95, 12);
   text-align: center;
+  width: 190px;
 }
 
 h4 {
   position: absolute;
   left: -60%;
-  top: -31%;
+  top: -18%;
   text-align: left;
   font-size: 10px;
   line-height: 12px;
@@ -64,7 +65,7 @@ h4 {
 section {
   width: fit-content;
   height: fit-content;
-  padding: 50px 200px 50px 200px !important;
+  padding: 80px 280px 10px 227px !important;
   margin: auto;
 }
 .switcher{
@@ -93,10 +94,7 @@ section {
   /* transform: translateY(-10px); */
 }
 
-.landscapeScreen #engine-img {
-height: 339px;
-  border-radius: 10px;
-}
+.landscapeScreen #engine-img {height: 350px;border-radius: 10px;}
 
 .portraitScreen #engine-img {
   height: 339px;
@@ -207,15 +205,15 @@ height: 339px;
   background: red;
   position: absolute;
   z-index: 0;
-  height: 107px;
+  height: 120px;
   transform-origin: center center;
 }
 
 .lines::after {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   background: red;
   position: absolute;
   bottom: 0px;
@@ -225,8 +223,8 @@ height: 339px;
 }
 
 #line1 {
-  left: 13.9%;
-  top: 36.5%;
+  left: 12%;
+  top: 36.4%;
   transform: translate(-50%, -50%) rotate(-39deg);
   background: rgb(77, 20, 140);
 }
@@ -249,7 +247,7 @@ height: 339px;
 
 #line3 {
   left: 39.7%;
-  top: 32%;
+  top: 32.5%;
   transform: translate(-50%, -50%) rotate(-22deg);
   height: 131px;
   background: rgb(108, 34, 115);
@@ -261,7 +259,7 @@ height: 339px;
 
 #line4 {
   left: 60.4%;
-  bottom: 67.5%;
+  bottom: 66.4%;
   transform: translate(-50%, 50%) rotate(21deg);
   height: 125px;
   background: rgb(229 98 47);
@@ -272,8 +270,8 @@ height: 339px;
 }
 
 #line5 {
-  left: 75.5%;
-  bottom: 43.5%;
+  left: 78.5%;
+  bottom: 42.5%;
   transform: translate(-50%, 50%) rotate(479deg);
   background: rgb(182, 68, 57);
 }
@@ -283,8 +281,8 @@ height: 339px;
 }
 
 #line6 {
-  right: 15%;
-  bottom: 62%;
+  right: 13.5%;
+  bottom: 63%;
   transform: translate(50%, 50%) rotate(35deg);
   background: rgb(216, 84, 31);
 }
@@ -336,7 +334,7 @@ right: 12.6%;
   padding:8px;
   position: absolute;
   right: -35%;
-  top: 50%;
+  top: 40%;
   transform: translate(70%, calc(-0% + 45px));
   background: white;
   border-radius: 5px;
@@ -419,9 +417,9 @@ right: 12.6%;
 
 @media (max-width: 1200px) {
   section {
-    position: relative;
+    /* position: relative; */
     /* transform: translateY(-5%); */
-    padding: 75px 120px 0px 120px;
+    /* padding: 75px 120px 0px 120px; */
   }
 }
  /* @media (max-width: 892px) {
@@ -566,5 +564,77 @@ section {
 
   to {
     opacity: 1;
+  }
+}
+
+
+
+
+
+@media (min-width: 925px) {
+  section{
+    transform: scale(1.05) translateY(-7%);
+  }
+}
+
+@media (min-width: 1000px) {
+  section{
+    transform: scale(1.15) translateY(-7%);
+  }
+}
+@media (min-width: 1050px) {
+  section{
+    transform: scale(1.20) translateY(-7%);
+  }
+}
+@media (min-width: 1100px) {
+  section{
+    transform: scale(1.25) translateY(-7%);
+  }
+}
+@media (min-width: 1150px) {
+  section{
+    transform: scale(1.3) translateY(-7%);
+  }
+}
+@media (min-width: 1180px) {
+  section{
+    transform: scale(1.33) translateY(-7%);
+  }
+}
+@media (min-width: 1200px) {
+  section{
+    transform: scale(1.38);
+  }
+}
+@media (min-width: 1250px) {
+  section{
+    transform: scale(1.45
+      );
+  }
+}
+@media (min-width: 1280px) {
+  section{
+    transform: scale(1.5);
+  }
+}
+@media (min-width: 1300px) {
+  section{
+    transform: scale(1.52);
+  }
+}
+@media (min-width: 1400px) {
+  section{
+    transform: scale(1.6);
+  }
+}
+@media (min-width: 1600px) {
+  section{
+    transform: scale(1.8);
+  }
+}
+@media (min-width: 1800px) {
+  section{
+    transform: scale(2);
   }
 }

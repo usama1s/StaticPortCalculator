@@ -42,10 +42,10 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#inp6").style.color = "black";
     }
 
-    groupA = (((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(3);
-    groupB = (((eval(inp1) + eval(inp6))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(3);
- 
-   
+    groupA = (((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
+    groupB = (((eval(inp1) + eval(inp6))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
+
+
 
     if (groupA >= -0.25 && groupA <= 0.25) {
       document.querySelector("#groupA span").style.color = "green";
@@ -81,12 +81,12 @@ function reset() {
 
   document.querySelector("#groupA span").style.color = "black";
   document.querySelector("#groupB span").style.color = "black";
- 
+
 
   document.querySelector("#groupA span").innerHTML = "";
   document.querySelector("#groupB span").innerHTML = "";
 
-  
+
 }
 window.addEventListener('resize', function(event) {
   updateEngineSize()
