@@ -268,10 +268,10 @@ section {
 }
 
 #line4 {
-  left: 60.4%;
-  bottom: 67.5%;
+  left: 62.0%;
+  bottom: 69.5%;
   transform: translate(-50%, 50%) rotate(21deg);
-  /* height: 125px; */
+  height: 148px;
   background: rgb(229 98 47);
 }
 
