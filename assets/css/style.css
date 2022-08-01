@@ -323,9 +323,10 @@ section {
 
 #line6 {
   right: 38%;
-  bottom: 36.5%;
+  bottom: 40.5%;
   transform: translate(50%, 50%) rotate(167deg);
   background: rgb(216, 84, 31);
+  height: 90px;
 }
 
 #line6::after {
@@ -335,7 +336,7 @@ section {
 #line7 {
   right: 32.5%;
   top: 30%;
-  transform: translate(50%, -50%) rotate(5deg);
+  transform: translate(50%, -50%) rotate(9deg);
   background: rgb(246, 98, 7);
 }
 
@@ -355,11 +356,11 @@ section {
 }
 
 #line9 {
-  right: 10.6%;
-  top: 32.2%;
-  transform: translate(50%, -50%) rotate(31deg);
-  /* height: 90px; */
-  background: rgb(215 136 85);
+  right: 12.6%;
+    top: 36.2%;
+    transform: translate(50%, -50%) rotate(31deg);
+    height: 90px;
+    background: rgb(215 136 85);
 }
 
 #line9::after {
@@ -547,7 +548,7 @@ h2 , .output{
   padding: 4px 0;
   position: absolute;
   z-index: 1;
-  bottom: 99%;
+  bottom:-70%;
   left: -37%;
   text-decoration: none;
   border: 1px solid rgb(253, 101, 2);
@@ -565,7 +566,8 @@ h2 , .output{
 .popuptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: -40%;
+  transform: rotate(180deg);
   left: 47%;
   margin-left: -5px;
   border-width: 12px;

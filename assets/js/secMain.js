@@ -11,36 +11,36 @@ for (var i = 0; i < inputlength; i++) {
     inp6 = document.querySelector("#inp6").value;
 
 
-    if (inp1>=1) {
-      document.querySelector("#inp1").style.color = "red";
-    }else{
-      document.querySelector("#inp1").style.color = "black";
-    }
-    if (inp2>=1) {
-      document.querySelector("#inp2").style.color = "red";
-    }else{
-      document.querySelector("#inp2").style.color = "black";
-    }
-    if (inp3>=1) {
-      document.querySelector("#inp3").style.color = "red";
-    }else{
-      document.querySelector("#inp3").style.color = "black";
-    }
-    if (inp4>=1) {
-      document.querySelector("#inp4").style.color = "red";
-    }else{
-      document.querySelector("#inp4").style.color = "black";
-    }
-    if (inp5>=1) {
-      document.querySelector("#inp5").style.color = "red";
-    }else{
-      document.querySelector("#inp5").style.color = "black";
-    }
-    if (inp6>=1) {
-      document.querySelector("#inp6").style.color = "red";
-    }else{
-      document.querySelector("#inp6").style.color = "black";
-    }
+    // if (inp1>=1) {
+    //   document.querySelector("#inp1").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp1").style.color = "black";
+    // }
+    // if (inp2>=1) {
+    //   document.querySelector("#inp2").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp2").style.color = "black";
+    // }
+    // if (inp3>=1) {
+    //   document.querySelector("#inp3").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp3").style.color = "black";
+    // }
+    // if (inp4>=1) {
+    //   document.querySelector("#inp4").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp4").style.color = "black";
+    // }
+    // if (inp5>=1) {
+    //   document.querySelector("#inp5").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp5").style.color = "black";
+    // }
+    // if (inp6>=1) {
+    //   document.querySelector("#inp6").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp6").style.color = "black";
+    // }
 
     if (inp1 == inp6){
       document.querySelector("#inp1").style.color = "black";
@@ -50,8 +50,8 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#inp6").style.color = "red";
     }
 
-    groupA = (((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
-    groupB = (((eval(inp1) + eval(inp6))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
+    groupA = Math.round(parseFloat(((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2))*100)/100;
+    groupB = Math.round(parseFloat(((eval(inp1) + eval(inp6))/2) - ((eval(inp3) + eval(inp4)) / 2))*100)/100;
 
 
 

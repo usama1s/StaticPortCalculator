@@ -13,51 +13,51 @@ for (var i = 0; i < inputlength; i++) {
     inp8 = document.querySelector("#inp8").value;
     inp9 = document.querySelector("#inp9").value;
 
-    if (inp1>=1) {
-      document.querySelector("#inp1").style.color = "red";
-    }else{
-      document.querySelector("#inp1").style.color = "black";
-    }
-    if (inp2>=1) {
-      document.querySelector("#inp2").style.color = "red";
-    }else{
-      document.querySelector("#inp2").style.color = "black";
-    }
-    if (inp3>=1) {
-      document.querySelector("#inp3").style.color = "red";
-    }else{
-      document.querySelector("#inp3").style.color = "black";
-    }
-    if (inp4>=1) {
-      document.querySelector("#inp4").style.color = "red";
-    }else{
-      document.querySelector("#inp4").style.color = "black";
-    }
-    if (inp5>=1) {
-      document.querySelector("#inp5").style.color = "red";
-    }else{
-      document.querySelector("#inp5").style.color = "black";
-    }
-    if (inp6>=1) {
-      document.querySelector("#inp6").style.color = "red";
-    }else{
-      document.querySelector("#inp6").style.color = "black";
-    }
-    if (inp7>=1) {
-      document.querySelector("#inp7").style.color = "red";
-    }else{
-      document.querySelector("#inp7").style.color = "black";
-    }
-    if (inp8>=1) {
-      document.querySelector("#inp8").style.color = "red";
-    }else{
-      document.querySelector("#inp8").style.color = "black";
-    }
-    if (inp9>=1) {
-      document.querySelector("#inp9").style.color = "red";
-    }else{
-      document.querySelector("#inp9").style.color = "black";
-    }
+    // if (inp1>=1) {
+    //   document.querySelector("#inp1").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp1").style.color = "black";
+    // }
+    // if (inp2>=1) {
+    //   document.querySelector("#inp2").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp2").style.color = "black";
+    // }
+    // if (inp3>=1) {
+    //   document.querySelector("#inp3").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp3").style.color = "black";
+    // }
+    // if (inp4>=1) {
+    //   document.querySelector("#inp4").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp4").style.color = "black";
+    // }
+    // if (inp5>=1) {
+    //   document.querySelector("#inp5").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp5").style.color = "black";
+    // }
+    // if (inp6>=1) {
+    //   document.querySelector("#inp6").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp6").style.color = "black";
+    // }
+    // if (inp7>=1) {
+    //   document.querySelector("#inp7").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp7").style.color = "black";
+    // }
+    // if (inp8>=1) {
+    //   document.querySelector("#inp8").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp8").style.color = "black";
+    // }
+    // if (inp9>=1) {
+    //   document.querySelector("#inp9").style.color = "red";
+    // }else{
+    //   document.querySelector("#inp9").style.color = "black";
+    // }
 
 
     if (inp1 == inp9){
@@ -67,11 +67,14 @@ for (var i = 0; i < inputlength; i++) {
       document.querySelector("#inp1").style.color = "red";
       document.querySelector("#inp9").style.color = "red";
     }
-    groupA = (((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
-    groupB = (((eval(inp5) + eval(inp8))/2) - ((eval(inp6) + eval(inp7)) / 2)).toFixed(2);
-    groupC = (((eval(inp1) + eval(inp7))/2) - ((eval(inp3) + eval(inp4)) / 2)).toFixed(2);
-    groupD = (((eval(inp3) + eval(inp9))/2) - ((eval(inp6) + eval(inp7)) / 2)).toFixed(2);
+    groupA = Math.round(parseFloat(((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4))/2 ))*100)/100;
+    groupB = Math.round(parseFloat(((eval(inp5) + eval(inp8))/2) - ((eval(inp6) + eval(inp7))/2 ))*100)/100;
+    groupC = Math.round(parseFloat(((eval(inp1) + eval(inp7))/2) - ((eval(inp3) + eval(inp4))/2 ))*100)/100;
+    groupD = Math.round(parseFloat(((eval(inp3) + eval(inp9))/2) - ((eval(inp6) + eval(inp7))/2 ))*100)/100;
 
+//     console.log(((((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2))));
+// console.log((parseFloat(((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2))));
+// console.log(Math.round(parseFloat(((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2))*100)/100);
 
     if (groupA >= -0.25 && groupA <= 0.25) {
       document.querySelector("#groupA span").style.color = "green";

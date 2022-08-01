@@ -232,10 +232,11 @@ section {
 }
 
 #line1 {
-  left: 12%;
-  top: 35.0%;
+  left: 14%;
+  top: 38%;
   transform: translate(-50%, -50%) rotate(-39deg);
   background: rgb(77, 20, 140);
+  height: 100px
 }
 
 #line1::after {
@@ -522,7 +523,7 @@ section {
   padding: 4px 0;
   position: absolute;
   z-index: 1;
-  bottom: 99%;
+  bottom: -46%;
   left: -37%;
   text-decoration: none;
   border: 1px solid rgb(253, 101, 2);
@@ -540,7 +541,8 @@ section {
 .popuptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: -54%;
+  transform: rotate(180deg);
   left: 47%;
   margin-left: -5px;
   border-width: 12px;
