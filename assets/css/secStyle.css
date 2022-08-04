@@ -62,6 +62,36 @@ h4 {
   border: 3px solid rgb(77, 20, 140);
   text-align: center;
 }
+
+ 
+
+ .switchbtn {
+  display: flex;
+  position: absolute;
+  text-align: center;
+
+  left: -60%;
+  top: 17%;
+  height: 3em;
+  text-decoration: none;
+  padding: 4px 8px;
+  min-width: 100px;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  border-radius: 3px;
+  letter-spacing: 0.4px;
+  transition: all 0.2s linear;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid rgb(91, 55, 234);
+  background: #fff;
+  font-size: 14px;
+line-height: 18px;
+ }
+ 
+
+
 section {
   width: fit-content;
   height: fit-content;
