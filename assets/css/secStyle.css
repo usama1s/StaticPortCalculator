@@ -100,7 +100,7 @@ section {
 }
 .switcher{
   position: absolute;
-  top: -24%;
+  top: -19%;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
