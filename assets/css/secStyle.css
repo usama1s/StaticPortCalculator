@@ -111,6 +111,7 @@ section {
   background: #fff;
   width: fit-content;
   border-radius: 4px;
+  width: 265px;
 }
 .switcher a{
   font-size: 18px;

@@ -90,24 +90,24 @@ h4 {
   cursor: pointer;
   border: 2px solid #2c34d9;
   background: #2c34d9;
-  
+
   font-size: 14px;
 line-height: 18px;
  }
- 
+
  .switchbtn > svg {
   margin-right: 5px;
   margin-left: 5px;
   font-size: 20px;
   transition: all 0.4s ease-in;
  }
- 
+
  .switchbtn:hover > svg {
   font-size: 1.2em;
   transform: translateX(-5px);
  }
- 
- 
+
+
 
 
 section {
@@ -130,6 +130,7 @@ section {
   background: #fff;
   width: fit-content;
   border-radius: 4px;
+  width: 250px;
 }
 .switcher a {
   font-size: 18px;
