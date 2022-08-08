@@ -63,7 +63,7 @@ h4 {
   text-align: center;
 }
 
-
+ 
 
  .switchbtn {
   display: flex;
@@ -89,7 +89,7 @@ h4 {
   font-size: 14px;
 line-height: 18px;
  }
-
+ 
 
 
 section {
@@ -100,7 +100,7 @@ section {
 }
 .switcher{
   position: absolute;
-  top: -19%;
+  top: -24%;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
@@ -109,7 +109,7 @@ section {
   gap: 10px;
   padding: 10px;
   background: #fff;
-  width: 270px;
+  width: fit-content;
   border-radius: 4px;
 }
 .switcher a{
@@ -556,15 +556,19 @@ section {
   padding: 4px 0;
   position: absolute;
   z-index: 1;
-  bottom: -46%;
+  bottom: -118%;
   left: -37%;
   text-decoration: none;
   border: 1px solid rgb(253, 101, 2);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .popuptext a {
   text-decoration: none;
   color: blue;
+  line-height: 20px;
   /* font-weight: 600; */
   /* text-align: center; */
   /* font-size: 18px; */
@@ -574,9 +578,9 @@ section {
 .popuptext::after {
   content: "";
   position: absolute;
-  top: -54%;
+  top: -25%;
   transform: rotate(180deg);
-  left: 47%;
+  left: 46.5%;
   margin-left: -5px;
   border-width: 12px;
   border-style: solid;

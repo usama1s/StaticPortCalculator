@@ -90,24 +90,24 @@ h4 {
   cursor: pointer;
   border: 2px solid #2c34d9;
   background: #2c34d9;
-
+  
   font-size: 14px;
 line-height: 18px;
  }
-
+ 
  .switchbtn > svg {
   margin-right: 5px;
   margin-left: 5px;
   font-size: 20px;
   transition: all 0.4s ease-in;
  }
-
+ 
  .switchbtn:hover > svg {
   font-size: 1.2em;
   transform: translateX(-5px);
  }
-
-
+ 
+ 
 
 
 section {
@@ -128,7 +128,7 @@ section {
   gap: 10px;
   padding: 10px;
   background: #fff;
-  width: 240px;
+  width: fit-content;
   border-radius: 4px;
 }
 .switcher a {
@@ -593,15 +593,19 @@ h2 , .output{
   padding: 4px 0;
   position: absolute;
   z-index: 1;
-  bottom:-70%;
+  bottom:-118%;
   left: -37%;
   text-decoration: none;
   border: 1px solid rgb(253, 101, 2);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 .popuptext a {
   text-decoration: none;
   color: blue;
+  line-height: 20px;
   /* font-weight: 600; */
   /* text-align: center; */
   /* font-size: 18px; */
@@ -611,9 +615,9 @@ h2 , .output{
 .popuptext::after {
   content: "";
   position: absolute;
-  top: -40%;
+  top: -25%;
   transform: rotate(180deg);
-  left: 47%;
+  left: 46%;
   margin-left: -5px;
   border-width: 12px;
   border-style: solid;
