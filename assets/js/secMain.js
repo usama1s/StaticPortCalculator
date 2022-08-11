@@ -1,114 +1,82 @@
-var inputlength = document.querySelectorAll(".position_data").length;
-// console.log(inputlength);
+var inputlength = $(".position_data").length;
+// console.log(inputlength + "new")
 for (var i = 0; i < inputlength; i++) {
-  document.querySelectorAll(".position_data")[i].addEventListener('input', function(event) {
-    // alert("Fdsa");
-    inp1 = document.querySelector("#inp1").value;
-    inp2 = document.querySelector("#inp2").value;
-    inp3 = document.querySelector("#inp3").value;
-    inp4 = document.querySelector("#inp4").value;
-    inp5 = document.querySelector("#inp5").value;
-    inp6 = document.querySelector("#inp6").value;
-
-
-    // if (inp1>=1) {
-    //   document.querySelector("#inp1").style.color = "red";
-    // }else{
-    //   document.querySelector("#inp1").style.color = "black";
-    // }
-    // if (inp2>=1) {
-    //   document.querySelector("#inp2").style.color = "red";
-    // }else{
-    //   document.querySelector("#inp2").style.color = "black";
-    // }
-    // if (inp3>=1) {
-    //   document.querySelector("#inp3").style.color = "red";
-    // }else{
-    //   document.querySelector("#inp3").style.color = "black";
-    // }
-    // if (inp4>=1) {
-    //   document.querySelector("#inp4").style.color = "red";
-    // }else{
-    //   document.querySelector("#inp4").style.color = "black";
-    // }
-    // if (inp5>=1) {
-    //   document.querySelector("#inp5").style.color = "red";
-    // }else{
-    //   document.querySelector("#inp5").style.color = "black";
-    // }
-    // if (inp6>=1) {
-    //   document.querySelector("#inp6").style.color = "red";
-    // }else{
-    //   document.querySelector("#inp6").style.color = "black";
-    // }
+    document.querySelectorAll(".position_data")[i].addEventListener('input', function(event) {
+    // alert("The text has been changed.");
+    inp1 = $("#inp1").val();
+    inp2 = $("#inp2").val();
+    inp3 = $("#inp3").val();
+    inp4 = $("#inp4").val();
+    inp5 = $("#inp5").val();
+    inp6 = $("#inp6").val();
+  
 
     if (inp1 == inp6){
-      document.querySelector("#inp1").style.color = "black";
-      document.querySelector("#inp6").style.color = "black";
-    }else{
-      document.querySelector("#inp1").style.color = "red";
-      document.querySelector("#inp6").style.color = "red";
-    }
-
-    groupA = Math.round(parseFloat(((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4)) / 2))*100)/100;
-    groupB = Math.round(parseFloat(((eval(inp1) + eval(inp6))/2) - ((eval(inp3) + eval(inp4)) / 2))*100)/100;
-
-
-
-    if (groupA >= -0.25 && groupA <= 0.25) {
-      document.querySelector("#groupA span").style.color = "green";
-    } else {
-      document.querySelector("#groupA span").style.color = "red";
-    }
-    if (groupA != "NaN") {
-      document.querySelector("#groupA span").innerHTML = groupA+" mm";
-    }
+        $("#inp1").css("color", "black");  
+       $("#inp6").css("color", "black"); 
+      }else{
+        $("#inp1").css("color", "red");
+        $("#inp6").css("color", "red"); 
+      }
+      groupA = Math.round(parseFloat(((eval(inp2) + eval(inp5))/2) - ((eval(inp3) + eval(inp4))/2 ))*100)/100;
+      groupB = Math.round(parseFloat(((eval(inp1) + eval(inp6))/2) - ((eval(inp3) + eval(inp4))/2 ))*100)/100;
+   
 
 
-    if (groupB >= -0.5 && groupB <= 0.5) {
-      document.querySelector("#groupB span").style.color = "green";
-    } else {
-      document.querySelector("#groupB span").style.color = "red";
-    }
-    if (groupB != "NaN") {
-      document.querySelector("#groupB span").innerHTML = groupB+" mm";
-    }
-
-
-
+      if (groupA >= -0.25 && groupA <= 0.25) {
+        $("#groupA span").css("color", "green");
+      } else {
+        $("#groupA span").css("color", "red");
+      }
+      if (groupA != "NaN") {
+        $("#groupA span").text(groupA+" mm");
+      }
+  
+  
+      if (groupB >= -0.5 && groupB <= 0.5) {
+        $("#groupB span").css("color", "green");
+      } else {
+        $("#groupB span").css("color", "red");
+      }
+      if (groupB != "NaN") {
+        $("#groupB span").text(groupB+" mm");
+      }
+  
+     
   });
 }
+$("#resetbtn").click(function(){
+    $("#inp1").val("");
+    $("#inp2").val("");
+    $("#inp3").val("");
+    $("#inp4").val("");
+    $("#inp5").val("");
+    $("#inp6").val("");
+   
+    $("#groupA span").css("color", "black");
+    $("#groupB span").css("color", "black");
+   
+   
+    $("#groupA span").text("");
+    $("#groupB span").text("");
 
-function reset() {
-  document.querySelector("#inp1").value = "";
-  document.querySelector("#inp2").value = "";
-  document.querySelector("#inp3").value = "";
-  document.querySelector("#inp4").value = "";
-  document.querySelector("#inp5").value = "";
-  document.querySelector("#inp6").value = "";
-
-  document.querySelector("#groupA span").style.color = "black";
-  document.querySelector("#groupB span").style.color = "black";
+   })
 
 
-  document.querySelector("#groupA span").innerHTML = "";
-  document.querySelector("#groupB span").innerHTML = "";
 
-
-}
-window.addEventListener('resize', function(event) {
-  updateEngineSize()
-});
-updateEngineSize();
-
-function updateEngineSize() {
-  console.log(window.innerWidth >= window.innerHeight);
-  // console.log(window.innerHeight);
-  if (window.innerWidth >= window.innerHeight) {
-    document.querySelector("body").classList.add("landscapeScreen");
-    document.querySelector("body").classList.remove("portraitScreen");
-  } else {
-    document.querySelector("body").classList.add("portraitScreen");
-    document.querySelector("body").classList.remove("landscapeScreen");
+  window.addEventListener('resize', function(event) {
+    updateEngineSize()
+  });
+  updateEngineSize();
+  
+  function updateEngineSize() {
+    // console.log(window.innerWidth >= window.innerHeight);
+   
+     if (window.innerWidth >= window.innerHeight) {
+        $("body").addClass("landscapeScreen");
+        $("body").removeClass("portraitScreen");
+      } else {
+        $("body").addClass("portraitScreen");
+        $("body").removeClass("landscapeScreen");
+      }
   }
-}

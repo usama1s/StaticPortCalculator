@@ -47,10 +47,10 @@
           </span>
         </h2>
         <div class="btns-logo">
-          <button class="reset" name="button" onclick="reset();">
+          <button class="reset" id="resetbtn" name="button" >
             <img src="assets/images/reset.png" alt="">
           </button>
-          <a onclick="popup1()" class="info-btn ">
+          <a onclick="popup1()" id="infobtn" class="info-btn ">
             <img src="assets/images/question-mark.png" alt="">
           </a>
           <span class="popuptext" id="myPopup">
@@ -136,15 +136,18 @@
     </section>
 
   </main>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="assets/js/main.js">
 
   </script>
   <script>
-    function popup1() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
+    $(document).ready(function(){
+      $("#infobtn").click(function(){
+        $("#myPopup").toggleClass("show");
+      });
+});
   </script>
+
 </body>
 
 </html>

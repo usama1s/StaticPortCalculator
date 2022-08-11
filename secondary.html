@@ -16,7 +16,7 @@
       <div class="tire">
         <div class="switcher">
           <a> Secondary Static Port Calculator</a>
-          <!-- <a href="secondary.html">Secondary Static Port Calculator</a> -->
+        
         </div>
 
 
@@ -44,10 +44,10 @@
 
         </h2>
         <div class="btns-logo">
-          <button class="reset" name="button" onclick="reset();">
+          <button class="reset" id="resetbtn" name="button" >
             <img src="assets/images/reset.png" alt="">
           </button>
-          <a onclick="popup1()" class="info-btn ">
+          <a id="infobtn" class="info-btn ">
             <img src="assets/images/question-mark.png" alt="">
           </a>
           <span class="popuptext" id="myPopup">
@@ -108,8 +108,7 @@
 
             <span class="area">Area R2</span>
             <h3 class="groups" id="groupB"> Value 2: <span></span> </h3>
-            <!-- <h1 class="groups" id="groupE"><b> Group E:</b> <span></span> </h1>
-          <h1 class="groups" id="groupF"><b> Group F:</b> <span></span> </h1> -->
+         
           </div>
 
         </div>
@@ -119,14 +118,14 @@
 
     </section>
   </main>
-  <script type="text/javascript" src="assets/js/secMain.js">
-
-  </script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/secMain.js"></script>
   <script>
-    function popup1() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-    }
+    $(document).ready(function(){
+      $("#infobtn").click(function(){
+        $("#myPopup").toggleClass("show");
+      });
+});
   </script>
 </body>
 
